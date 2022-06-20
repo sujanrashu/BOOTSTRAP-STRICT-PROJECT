@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #f6f9f9;
+    
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #2d3950;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.banner{
+    background-image: url("../image/Image.png");
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    
+}
+.banner h1{
+    color: #fff;
+    font-size: 85px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+        
+}
+.banner span{
+    height: 2px;
+    background: #15a4fa;
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+    
+.banner p{
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.btn-custom{
+    background: transparent;
+    border: 1px solid #15a4fa;
+    padding: 8px 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s all ease-in-out 0s;
+}
+
+.btn-custom:hover {
+    background: #15a4fa;
+   
+}
+
+.height{
+    min-height: 90vh;
+    align-items: center;
+}
+.icon {
+    color: #fff;
+    font-size: 22px;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translate(-50%);
+    animation: updown 0.8s linear infinite;
+    animation-direction: alternate;
+    
+    
+}
+
+@keyframes updown {
+    0% {
+        bottom: 80px;
+    }
+
+    100% {
+        bottom: 40px;
+    }
+}
+
+.simple_section{
+    width: 100%;
+    margin: auto;
+    font-family: lato, sans-serif;
+    background-color:#f6f9f9;
+}
+.simple_section h1{
+    font-size: 35px;
+    color: black;
+   
+}
+.simple_section p{
+    width: 100%;
+    font-size: 20px;
+    color: rgb(135, 119, 119);  
+
+}
+.feature{
+
+}
+.feature_icon{
+    height: 80px;
+    width: 80px;
+    display: flex;
+    background: #15a4fa;
+    justify-content: center;
+    align-items: center;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+50,5fc3ff+50,5fc3ff+100 */
+    background: #48baff;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#48baff', endColorstr='#5fc3ff', GradientType=1);
+    /* IE6-9 */
+    font-size: 40px;
+    color: #fff;
+    margin: auto;
+    
+}
+.feature h3{
+    font-size: 25px;
+    color: #2d3950;
+    
+}
+.feature p{
+    font-size: 16px;
+    color: #909090;
+    margin: auto;
+    
+}
+.gallery{
+    background-color:#f6f9f9;
+    width: 100%;
+    padding: auto;
+}
+.gallery h1{
+        
+}
+.gallery p{
+
+}
+.gallery_item{
+    position: relative;
+    
+}
+
+.gallery_item img{
+   width: 100%;
+     
+}
+.gallery_item::before{
+    content: "";
+    position: absolute;
+    background: #15a4fa;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.gallery_item:hover::before{
+    width: 100%;
+    opacity: .5;
+    width: 100%;
+   
+}
+.gallery_icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f6f9f9;
+    opacity: 0;
+    z-index: 9;
+    transition: all 0.3s ease-in-out;
+}
+
+.gallery_item:hover .gallery_icon {
+    opacity: 1;
+}
+.gallery_icon i {
+    border: 1px solid #f6f9f9;
+    padding: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.gallery_icon i:hover {
+    background-color: rgb(206, 225, 225);
+    color: #15a4fa;
+}
+
+.contact_section {
+    background-image: url("../image/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+.contact_section::before {
+    content: '';
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background: #2d3950;
+    opacity: .8;
+    z-index: -1;
+}
+
+.contact_section form input {
+    background-color: transparent;
+    
+}
+
+.contact_section form textarea {
+   
+    background-color: transparent;
+    
+}
+
+.contact_section form input[type="submit"]{
+    border: 1px solid #f6f9f9;
+    color: #fff;
+    padding: 5px 30px;;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.contact_section form input[type="submit"]:hover {
+    background-color: #15a4fa;
+}
+
+.button{
+    width: 50%;
+    padding-left: 350px;
+    
+}
+.button input{
+    padding: 4px 35px;
+    color: #fff;
+    background: transparent;
+   
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    
+}
+.checkbox input{
+    margin-top: 2px;
+    
+}
+
+.checkbox p{
+    color: #fff;
+    margin: 8px;
+}
+
+.footer {
+    margin-top: 15px;
+}
+
+.footer  p {
+    color: #999999;
+    font-size: 18px;
+}
+.social{  
+        
+}
+.social i{
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    background: #61b8e6;
+    border-radius: 10%;
+    padding-right: 18px;  
+    padding-left: 12px;
+    padding-top: 10px;
+    cursor: pointer;
+    
+}
+.social i:hover {
+    background: #444272;
+}
+
+
